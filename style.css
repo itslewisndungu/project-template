@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    font-family: 'Inter', sans-serif;
+}
+
+#nav-link {
+    @apply p-2 flex items-center gap-4 text-sm font-medium;
+}
+
+#nav-link > i {
+    @apply h-8 w-8 rounded grid text-[#228be6] text-sm place-content-center bg-[#e7f5ff];
+}
