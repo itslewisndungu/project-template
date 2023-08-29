@@ -10,13 +10,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Vite App</title>
 </head>
-<body>
+<body data-left-nav-state="closed">
 <div id="app" class="flex min-h-screen font-inter">
-    <nav id="navbar" class="max-w-[300px] border border-gray-200 divide-y"></nav>
-    <header id="header" class="self-start flex-1 bg-[#228be6] p-4 h-16 text-white flex items-center"></header>
+    <nav id="navbar" class="w-64 hidden md:block border border-gray-200 divide-y transition-transform"></nav>
+    <header id="header" class="flex self-start flex-1 bg-[#228be6] p-4 h-16 text-white items-center"></header>
+    <div id="hamburger" class="md:hidden"></div>
 </div>
 <script type="module" src="/src/main.js"></script>
 <script type="module" src="/src/navbar.js"></script>
 <script type="module" src="/src/header.js"></script>
+<script type="module" src="/src/hamburger.js"></script>
 </body>
 </html>

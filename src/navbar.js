@@ -3,10 +3,10 @@ let isNavFolded = false;
 
 nav.innerHTML = `
     <div id="user_info " class="p-4 flex flex-col items-center">
-     <div id="avatar" class="flex items-center justify-center h-16 aspect-square bg-[#1971c233] rounded-full  text-2xl ">
+     <div id="avatar" class="flex items-center justify-center h-16 aspect-square bg-[#1971c233] rounded-full text-2xl ">
         <span class="text-[#228be6]">JK</span>
      </div>
-     <div id="contact">
+     <div id="contact" class="text-center">
      <div id="user_name" class="mt-4 text-xl text-gray-800 font-medium">
         John Kimani
      </div>
@@ -16,36 +16,36 @@ nav.innerHTML = `
      </div>
     </div>
     
-    <div id="links" class="p-4 flex flex-col gap-1" >
-        <div id="nav-link" class=""> 
+    <div id="links" class="p-4 flex flex-col gap-1">
+        <a href="/" id="nav-link" class="pointer bg-[#f2f6f9]"> 
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Dashboard</span>
-        </div>
+        </a>
         
-        <div id="nav-link">
+        <a href="/" id="nav-link" class="pointer">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Members</span>
-        </div>
+        </a>
         
-        <div id="nav-link">
+        <a href="/" id="nav-link" class="pointer">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Meetings</span>
-        </div>
+        </a>
         
-        <div id="nav-link">
+        <a href="/" id="nav-link" class="pointer">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Loans</span>
-        </div>
+        </a>
         
-        <div id="nav-link">
+        <a href="/" id="nav-link" class="pointer">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Transactions</span>
-        </div>
+        </a>
         
-        <div id="nav-link">
+        <a href="/" id="nav-link" class="pointer">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Account Settings</span>
-        </div>
+        </a>
     </div>
 `
 
@@ -58,21 +58,21 @@ function setupMenuButton() {
     menuButton.addEventListener("click", () => {
         isNavFolded = !isNavFolded;
 
-        if (!isNavFolded) {
+        if (isNavFolded) {
+            for (let link of navLinkLabels) {
+                link.classList.add("hidden");
+            }
+            contact.classList.add("hidden")
+            avatar.classList.add("!h-8", "!text-lg")
+            nav.classList.remove("w-64")
+        } else {
             for (let link of navLinkLabels) {
                 link.classList.remove("hidden");
             }
             contact.classList.remove("hidden")
-            avatar.classList.remove("!h-8")
-        } else {
-            for (let link of navLinkLabels) {
-                link.classList.add("hidden");
-
-            }
-            contact.classList.add("hidden")
-            avatar.classList.add("!h-8", "")
+            avatar.classList.remove("!h-8", "!text-lg")
+            nav.classList.add("w-64")
         }
-
     })
 }
 
