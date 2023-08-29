@@ -28,32 +28,32 @@ function setupHamburgerContent() {
             </div>
 
             <div id="links" class="p-4 flex flex-col gap-1">
-                <a href="/" id="nav-link" class="pointer bg-[#f2f6f9]">
+                <a href="/" class="nav-link  bg-[#f2f6f9]">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Dashboard</span>
                 </a>
 
-                <a href="/" id="nav-link" class="pointer">
+                <a href="/" class="nav-link ">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Members</span>
                 </a>
 
-                <a href="/" id="nav-link" class="pointer">
+                <a href="/" class="nav-link ">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Meetings</span>
                 </a>
 
-                <a href="/" id="nav-link" class="pointer">
+                <a href="/" class="nav-link ">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Loans</span>
                 </a>
 
-                <a href="/" id="nav-link" class="pointer">
+                <a href="/" class="nav-link ">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Transactions</span>
                 </a>
 
-                <a href="/" id="nav-link" class="pointer">
+                <a href="/" class="nav-link ">
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <span class="nav-link-label">Account Settings</span>
                 </a>
