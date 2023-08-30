@@ -11,7 +11,7 @@ function setupHamburgerContent() {
                 class="absolute z-10 top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600">
             <i class="fa fa-times w-2.5 h-2.5 overflow-visible"></i>
         </button>
-        <nav id="nav" class="lg:text-sm lg:leading-6 relative divide-y">
+        <nav id="nav" class="lg:text-sm lg:leading-6 relative divide-y" aria-label="primary">
             <div id="user_info " class="p-4 flex flex-col items-center">
                 <div id="avatar"
                      class="flex items-center justify-center h-16 aspect-square bg-[#1971c233] rounded-full text-2xl ">

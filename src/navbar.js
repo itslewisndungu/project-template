@@ -1,5 +1,4 @@
 const nav = document.getElementById("navbar")
-let isNavFolded = false;
 
 nav.innerHTML = `
     <div id="user_info " class="p-4 flex flex-col items-center">
@@ -17,10 +16,16 @@ nav.innerHTML = `
     </div>
     
     <div id="links" class="p-4 flex flex-col gap-1">
-        <a href="/" class="nav-link  bg-[#f2f6f9]"> 
+        <a href="/" class="nav-link"> 
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="nav-link-label">Dashboard</span>
         </a>
+        
+        <a href="/settings.html"  class="nav-link  bg-[#f2f6f9]"> 
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span class="nav-link-label">Settings</span>
+        </a>
+        
         
         <a href="/" class="nav-link ">
             <i class="fa fa-home" aria-hidden="true"></i>
@@ -54,6 +59,7 @@ function setupMenuButton() {
     const navLinkLabels = document.getElementsByClassName("nav-link-label")
     const contact = document.getElementById("contact")
     const avatar = document.getElementById("avatar")
+    let isNavFolded = false;
 
     menuButton.addEventListener("click", () => {
         isNavFolded = !isNavFolded;

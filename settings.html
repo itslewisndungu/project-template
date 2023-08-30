@@ -12,10 +12,22 @@
 </head>
 <body data-left-nav-state="closed" data-main-nav-folded="false">
 <div id="app" class="flex min-h-screen font-inter">
-    <nav id="navbar" class="w-64 hidden md:block border border-gray-200 divide-y transition-transform"></nav>
-    <header id="header" class="flex self-start flex-1 bg-[#228be6] p-4 h-16 text-white items-center"></header>
+    <nav id="navbar" class="min-h-screen w-64 hidden md:block border border-gray-200 divide-y transition-transform"></nav>
     <div id="hamburger" class="md:hidden"></div>
+    <div class="flex-1">
+        <header id="header" class="flex self-start bg-[#228be6] p-4 h-16 text-white items-center"></header>
+        <main id="settings" class="m-8 min-h-full">
+            <h1>Settings</h1>
+            <div class="flex flex-col lg:flex-row mt-4 gap-4 min-w-full">
+                <nav id="settings__navigation" class="lg:block"></nav>
+                <div id="settings__content" class="flex-1 border min-h-[300px] grid place-content-center">
+                    <p>Some settings content</p>
+                </div>
+            </div>
+        </main>
+    </div>
 </div>
+<script type="module" src="/src/settings.js"></script>
 <script type="module" src="/src/main.js"></script>
 <script type="module" src="/src/navbar.js"></script>
 <script type="module" src="/src/header.js"></script>
