@@ -7,22 +7,22 @@ nav.innerHTML = `
             <span class="settings-nav-link-label">Payment Methods</span>
         </a>
         
-        <a href="/" class="settings-nav-link ">
+        <a href="/" class="settings-nav-link">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="settings-nav-link-label">Members</span>
         </a>
         
-        <a href="/" class="settings-nav-link ">
+        <a href="/" class="settings-nav-link">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="settings-nav-link-label">Meetings</span>
         </a>
         
-        <a href="/" class="settings-nav-link ">
+        <a href="/" class="settings-nav-link">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="settings-nav-link-label">Loans</span>
         </a>
         
-        <a href="/" class="settings-nav-link ">
+        <a href="/" class="settings-nav-link">
             <i class="fa fa-home" aria-hidden="true"></i>
             <span class="settings-nav-link-label">Transactions</span>
         </a>
